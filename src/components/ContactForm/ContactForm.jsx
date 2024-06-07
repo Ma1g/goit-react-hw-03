@@ -43,7 +43,7 @@ export default function ContactForm({ onAdd }) {
         />
         <ErrorMessage className={css.error} name="name" components="span" />
         <label className={css.label} htmlFor={`${fieldId}-number`}>
-          Name
+          Number
         </label>
         <Field
           className={css.input}
