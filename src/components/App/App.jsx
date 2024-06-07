@@ -33,7 +33,7 @@ export default function App() {
   }, [contacts]);
 
   const filteredContacts = contacts.filter((contact) => 
-    contact.name.toLowerCase().split(" ").some((word) => word.startWith(searchQuery.toLocaleLowerCase()))
+    contact.name.toLowerCase().split(" ").some((word) => word.startsWith(searchQuery.toLocaleLowerCase()))
   );
 
   const handleSearch = (query) => {
@@ -41,7 +41,7 @@ export default function App() {
   };
 
   return (
-    <div className={css.box}>
+    <div>
       <h1>Phonebook</h1>
       <ContactForm onAdd={addContact} />
       <SearchBox handleSearch={handleSearch} />
