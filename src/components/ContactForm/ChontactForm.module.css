@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 20px 0;
+  width: 300px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.error {
+  color: red;
+}
+.input {
+  width: auto;
+  height: 25px;
+  padding: 2px 8px;
+  outline: transparent;
+}
+.btn {
+  margin: 20px auto 0 auto;
+  font-size: 14px;
+  padding: 2px 8px;
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+}
