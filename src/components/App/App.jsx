@@ -11,7 +11,7 @@ export default function App() {
     if (savedContacts !== null) {
       return JSON.parse(savedContacts);
     }
-    return initialContacts;
+    return InitialContacts;
   });
   const [searchQuery, setSearchQuery] = useState("");
 
